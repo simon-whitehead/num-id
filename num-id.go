@@ -12,8 +12,8 @@ func Encode(n int64) string {
 	result := bytes.NewBuffer([]byte{})
 	f := float64(n)
 	al := float64(len(alphabet))
-	for i := int(math.Floor(math.Log(f) / math.Log(al))); i >= 0; i-- {
-		idx := int(math.Mod(math.Floor(f/bpow(al, float64(i))), al))
+	for i := math.Floor(math.Log(f) / math.Log(al)); i >= 0; i-- {
+		idx := int(math.Mod(math.Floor(f/bpow(al, i)), al))
 		result.WriteString(alphabet[idx : idx+1])
 	}
 
