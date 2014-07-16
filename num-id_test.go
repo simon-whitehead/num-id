@@ -4,16 +4,16 @@ import (
 	"testing"
 )
 
-func Test100EqualsCbaa(t *testing.T) {
+func Test100EqualsCb(t *testing.T) {
 	input := int64(100)
-	expected := "Cbaa"
+	expected := "Cb"
 	actual := Encode(input)
 
 	assertEqual(t, expected, actual)
 }
 
-func TestCbaaEquals100(t *testing.T) {
-	input := "Cbaa"
+func TestCbEquals100(t *testing.T) {
+	input := "Cb"
 	expected := int64(100)
 	actual := Decode(input)
 
