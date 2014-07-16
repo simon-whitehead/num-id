@@ -7,4 +7,18 @@ This code is a Go port of the code discussed here: http://kvz.io/blog/2009/06/10
 
 Credit should be given to Kevin van Zonneveld; I just ported it to Go.
 
-Unit tests included
+Unit tests included.
+
+Example:
+
+    import (
+        "fmt"
+        "github.com/simon-whitehead/num-id"
+    )
+
+    result := numid.Encode(123456789)
+    fmt.Println(result) // "8Kawi"
+
+    original := numid.Decode("8Kawi")
+    fmt.Println(original) // 123456789
+
