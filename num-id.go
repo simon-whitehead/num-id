@@ -40,6 +40,10 @@ func Decode(id string) int64 {
 	return result
 }
 
+func bpow(a float64, b float64) float64 {
+	return floor(pow(a, b))
+}
+
 func reverseString(s string) string {
 	n := len(s)
 	runes := make([]rune, n)
@@ -48,8 +52,4 @@ func reverseString(s string) string {
 		runes[n] = rune
 	}
 	return string(runes[n:])
-}
-
-func bpow(a float64, b float64) float64 {
-	return floor(pow(a, b))
 }
