@@ -1,4 +1,4 @@
-num-id
+num-id [![travis-ci status](https://api.travis-ci.org/simon-whitehead/num-id.png)](https://travis-ci.org/simon-whitehead/num-id)
 ======
 
 A number to alphanumeric conversion library for Go, similar to URL shortening services such as tinyurl.
